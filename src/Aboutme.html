@@ -3,27 +3,33 @@
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About me</title> </head> 
+        <title>About me</title> 
+        <link rel="stylesheet" href="./css/styles.css">
+    </head> 
         <body>
-
-    <header>
-        <nav>
-            <div>
+    <div class="container">
+    <header class="header">
+      
+     
+            <div class="logo">
                 <img src="./images/portfolioimg.png" alt="Logo" >
                 <p><strong>My portfolio</strong></p>
             </div>
-            <nav>
-                <a href="./Home.html">Home</a>
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="./resume.html">Resume</a>
-                <a href="./Contact.html">Contact</a>
-                <button>☰</button>
-            </nav>
-            
-        </nav>
+      
+        <div class="navigation">
+            <input type="checkbox" class="toggle-menu ">
+            <div class="hamburger"></div>
+            <ul class="menu">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./resume.html">Resume</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+    </div>
+
     </header>
     
-    <main>
+    <main class="main">
         <h1>About Me</h1>
         <article>
             <h2>Who is Yordanos?</h2>
@@ -40,17 +46,18 @@
             <section>
                 <h2>Watch My Journey</h2>
                 
-                <figure>
-                    <iframe src="https://www.youtube.com/embed/b_ha4OyIv0I?si=oUzZohp1BtXKzKyo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <figcaption>A video of my journey in software engineering</figcaption>
+                <figure class="video-container1">
+                    <iframe class="iframe1" src="https://www.youtube.com/embed/b_ha4OyIv0I?si=oUzZohp1BtXKzKyo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
                 </figure>
+            
             </section>
-            <section>
+            <div>
                 <h2>My Journey in software engineering</h2>
                 <p>
                     I am a software engineering student at AAIT and I am passionate about technology. I joined A2SV, a program that connects me with top tech companies in the US. I learned web and machine learning skills from A2SV and I made some cool projects with them. For example, I made a todo list app that helps me plan my day and a weather app that shows me the weather in different places. I used HTML, CSS, JavaScript, and nodejs to make these apps. I also used APIs to get data from OpenWeatherMap and Dark Sky. These projects show that I can work with web technologies and data. I am proud of what I have done and I want to keep learning and creating. I love my work because I think technology can make life easier and better for everyone.
                 </p>
-            </section>
+            </div>
         </article>
     </main>
 <footer>
@@ -60,13 +67,14 @@
     <div>
         <p>copyright 	&#169;2023 All Rights Reserved</p>
       </div>
-      <div>
+      <div class="footercontainer">
           <a href="https://www.instagram.com/yord_mele/#"><img src="./images/insta.png" alt="Instagram_icon" ></a>
           <a href="https://www.youtube.com/@goodengineer2015"><img src="./images/youtube1.png" alt="Youtube_icon"  ></a>
           <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img src="./images/linkdin1.png" alt="linkedin_icon"  ></a>
           <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon" ></a>
         </div>
 </footer>
+</div>
 
 </body>
 </html>

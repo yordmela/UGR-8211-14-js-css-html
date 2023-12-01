@@ -4,44 +4,61 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title> 
+        <link rel="stylesheet" href="./css/styles.css">
     </head> 
     <body>
-        <header>
-            <div>
-                <img src="./images/portfolioimg.png" alt="Logo" >
-                <p><strong>My portfolio</strong></p>
-            </div>
-            
-                <nav>
-                    <a href="./Home.html">Home</a>
-                    <a href="./Aboutme.html">Aboutme</a>
-                    <a href="./resume.html">Resume</a>
-                    <a href="./Contact.html">Contact</a>
-                    <button>☰</button>
-                </nav>
-                
-            
-        </header>
-<main>
 
+        <div class="container">
+            <header class="header">
+              
+             
+                    <div class="logo">
+                        <img src="./images/portfolioimg.png" alt="Logo" >
+                        <p><strong>My portfolio</strong></p>
+                    </div>
+              
+                <div class="navigation">
+                    <input type="checkbox" class="toggle-menu ">
+                    <div class="hamburger"></div>
+                    <ul class="menu">
+                        <li><a href="./Home.html">Home</a></li>
+                        <li><a href="./Aboutme.html">Aboutme</a></li>
+                        <li><a href="./resume.html">Resume</a></li>
+                        <li><a href="./Contact.html">Contact</a></li>
+                    </ul>
+            </div>
+        
+</header>
+
+        
+<main>
+    
     <section id="photos">
-        <h2>My Photo</h2>
+        
+        <div class="photo">
+            
         <figure>
             
-            <img src="./images/mypic.png" alt="My Photo" >
+            <img  class="myphoto" src="./images/mypic.png" alt="My Photo" >
             <figcaption>Picture of me</figcaption>
         </figure>
+    </div>
+    
+    <div class="div3">
         
-        <figure>
-            <img src="./images/clean.jpeg" alt="Project Image 1">
-            <figcaption>Peaceful environment</figcaption>
+        <figure >
+            <img class="image1 " src="./images/clean.jpeg" alt="Project Image 1">
+            <figcaption class="figcaption1" >Peaceful environment</figcaption>
         </figure>
         <p>My portfolio is more than a collection of projects; it's a narrative of my professional journey enriched by moments of inspiration and collaboration. In the image titled "Peaceful Environment," I find serenity in a clean and organized space. This tranquility is not just a backdrop but a driving force for crafting efficient and elegant code.</p>
+    </div>
+<div class="div3">
         <figure>
-            <img src="./images/env't.jpeg" alt="Project Image 2">
+            <img  class="image1"src="./images/env't.jpeg" alt="Project Image 2">
             <figcaption>Team work</figcaption>
         </figure>
         <p>The second snapshot, titled "Team Work," captures the essence of collaboration. In the dynamic world of software engineering, teamwork is the key to innovation. This image reflects the energy and synergy that arises when diverse minds come together to achieve a common goal. It's a testament to the belief that collective efforts lead to extraordinary results.</p>
+    </div>
     </section>
 
     <section id="audio">
@@ -56,18 +73,16 @@
 
 </main>
 <footer>
-    
-  
     <div>
-      <p>copyright 	&#169;2023 All Rights Reserved</p>
-    </div>
-    <div>
-        <a href="https://www.instagram.com/yord_mele/#"><img src="./images/insta.png" alt="Instagram_icon" ></a>
-        <a href="https://www.youtube.com/@goodengineer2015"><img src="./images/youtube1.png" alt="Youtube_icon"  ></a>
-        <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img src="./images/linkdin1.png" alt="linkedin_icon"  ></a>
-        <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon" ></a>
+        <p>copyright 	&#169;2023 All Rights Reserved</p>
       </div>
+      <div class="footercontainer">
+          <a href="https://www.instagram.com/yord_mele/#"><img src="./images/insta.png" alt="Instagram_icon" ></a>
+          <a href="https://www.youtube.com/@goodengineer2015"><img src="./images/youtube1.png" alt="Youtube_icon"  ></a>
+          <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img src="./images/linkdin1.png" alt="linkedin_icon"  ></a>
+          <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon" ></a>
+        </div>
 </footer>
-
+</div>
 </body>
 </html>
