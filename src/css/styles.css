@@ -5,15 +5,26 @@
 }
 
 .header{
+    margin-top: 20px;
+    margin-bottom: 30px;
     position: relative;
     width:100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 25px ;
+    padding: 0 20px; 
+    box-sizing: border-box;
     transition: 0.3s;
 }
 
+.main {
+    text-align: center;
+    max-width: 100%; 
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* start */
 .navigation{
     display:flex;
     justify-content:space-between ;
@@ -26,6 +37,7 @@
     align-items: center;
     z-index: 1;
     transition: 0.5s;
+    flex-grow: 1;
    
 }
 .menu li{
@@ -35,7 +47,7 @@
     color:blue;
     text-decoration:none;
     display: block;
-    padding: 40px 25px;
+    padding: 40px 50px;
     font-size: 18px;
     line-height: 1;
     transition:0.3s;
@@ -54,7 +66,7 @@
     background: black;
     border-radius: 10px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 2;
     transition: 0.3s;
     margin-right: 10px;
 }
@@ -64,6 +76,7 @@
     content: "";
     position: absolute;
     height: 4px;
+    right:0;
     background: black;
     border-radius: 10px;
     transition: 0.3s;
@@ -73,6 +86,7 @@
 
 .hamburger:before {
     top: -10px;
+    
    
 }
 
@@ -91,7 +105,9 @@
     opacity:0;
 
 }
-
+.hamburger, .toggle-menu{
+    display:none;
+}
 .navigation input:checked ~ .hamburger{
     background: transparent;
 }
@@ -110,12 +126,12 @@
     box-shadow: -20px 0 40px rgba(255,255,255,0.3);
 
 }
-@media screen  and (max-width: 9000px){
+@media screen  and (max-width: 480px){
     .hamburger, .toggle-menu{
         display:block;
     }
     .header{
-        padding:10px ;
+        padding:10px 20px;
     }
     .menu{
         justify-content: start;
@@ -139,16 +155,17 @@
         box-shadow: 0 1px 0 rgba(255,255,255,0.1)
         inset;
     }
+    
 }
 .container {
     display:flex;
     flex-direction: column;
      max-width: 100%; /* Adjust as needed */
-    margin: 0px auto 0; /* Adjust the top margin */
-    padding: 20px;
+     margin: 0 auto; /* Center the container horizontally */
+    box-sizing: border-box;
   
 }
-
+/* end */
 
 .main {
     text-align: center;
@@ -180,7 +197,12 @@ footer {
 }
 
 /* Media query for mobile responsiveness */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
+    .main article {
+        max-width: 800px; 
+        margin: 0 auto; 
+        text-align: justify; 
+    }
     .logo img {
         margin-right: 0;
     }
@@ -221,11 +243,7 @@ footer {
     text-align: left; /* Align the main content to the left */
 }
 
-.main article {
-    max-width: 800px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the article horizontally */
-    text-align: justify; /* Justify the text within the article */
-}
+
 .main article p {
     text-indent: 20px; /* Adjust the indentation value as needed */
 }
@@ -243,10 +261,9 @@ footer {
 
 
     .div3 ul {
-        width: calc(100% - 70px); /* Adjust the width of the list based on the available space */
-        font-size: smaller;
-        text-align: right; /* Align the text to the right within the list */
-        padding-right: 20px; /* Add some right padding for better readability */
+        width: calc(100% - 70px); 
+        text-align:left; 
+        padding-right: 20px; 
     }
     
     .image {
@@ -263,14 +280,20 @@ footer {
 
         justify-content: space-between;
     }
+    .div2 {
+        width:70vh;
+        display: flex;
+        justify-content: space-between;
+    }
 
-    /* figcaption {
-        width: 50px;
-        text-align: left; 
-    } */
+   .div1{
+    margin-bottom: 60px;
+   }
     .figcaption {
-        width: 70px;
-        text-align: left; /* Align the figcaption text to the left */
+        width: 100%;
+        text-align: center; 
+        
+        
     }
     #photos {
         display: flex;
@@ -302,6 +325,8 @@ footer {
 #audio audio {
     width: 100%; /* Set the width of the audio element to 100% */
 }
+
+
 
 table {
     width: 100%;
@@ -395,7 +420,7 @@ section p {
 
 
 .form {
-    max-width: 600px;
+    max-width: 700px;
     margin: auto; 
     background-color: #f0f0f0; 
     border-radius: 15px; 
@@ -448,4 +473,425 @@ form button:hover {
     background-color: #8656af; 
 }
 
+.audio{
+    width:100%;
+    margin-bottom: 40px;
+}
+#AAU {
+        
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video-div{
+   display:flex;
+}
+#paragraph{
+    margin-top: 90px;
+}
+.quote-section{
+    display:flex;
+    flex-direction: column;
+    font-size: 20px;
+}
 
+.form input{
+    margin-bottom: 30px;
+    height:50px
+}
+.form{
+    margin-top: 30px;
+        width:100vw;
+}
+#message{
+    height:90px;
+    margin-bottom: 35px;
+}
+@media screen and (max-width:480px) {
+    body {
+        font-size: 14px;
+    }
+    .main article {
+        max-width: 500px; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the article horizontally */
+        text-align: justify; /* Justify the text within the article */
+    }
+    .header{
+        position: relative;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0px; /* Adjust padding as needed */
+        box-sizing: border-box;
+        transition: 0.3s;
+  }
+  .footercontainer{
+    width:70vw;
+    display:flex;
+    justify-content: space-between;
+    
+}
+  .container {
+    width: 100%; /* Adjust the width as needed */
+    padding: 0 50px; /* Adjust padding as needed */
+}
+.image{
+
+    height:200px;
+}
+.image1{
+    width:130px;
+    height: 180px;
+    
+}
+
+
+.div2{
+    width:70vw;
+    display:flex;
+    justify-content: space-between;
+}
+.div2 p{
+    font-size: 12px;
+   
+}
+#paragraph{
+    font-size: 14px;
+    
+}
+
+.form {
+    width: 100%;
+    height:60vh;
+   
+}
+.social-media {
+    display: none;
+}
+
+ 
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 19px;
+    }
+    ul.menu{
+       padding-left: 0;
+    }
+    
+    .main article {
+        max-width:100%; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the article horizontally */
+        text-align: justify; /* Justify the text within the article */
+    }
+    .header{
+        position: relative;
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0px; /* Adjust padding as needed */
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+    .footercontainer{
+        width:70vw;
+        display:flex;
+        justify-content: space-between;
+        
+    }
+    .container {
+        width: 100%; /* Adjust the width as needed */
+        padding: 0 50px; /* Adjust padding as needed */
+    }
+    .menu li a {
+        color:blue;
+        text-decoration:none;
+        display: block;
+        padding: 0px 10px;
+        font-size: 15px;
+        line-height: 1;
+        transition:0.3s;
+    }
+    .footercontainer a {
+        font-size: 18px; /* Adjust the font size as needed */
+        padding: 10px; /* Adjust the padding as needed */
+    }
+    
+    .image {
+        width: 280px;
+        height: 230px;
+    }
+    .image1{
+        width:200px;
+        height:250px;
+    }
+
+    .div2 p{
+        font-size: 14px;
+    }
+    .div2{
+        width:70vw;
+        display:flex;
+        justify-content: space-between;
+    }
+    #paragraph{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .social-media {
+        display: none;
+    }
+    
+   
+  }
+  
+  /* Tablet */
+  @media screen and (min-width: 769px) and (max-width: 1279px) {
+    body {
+        font-size: 19px;
+    }
+    ul.menu{
+       padding-left: 0;
+    }
+    
+    .main article {
+        max-width:100%; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the article horizontally */
+        text-align: justify; /* Justify the text within the article */
+    }
+    .header{
+        position: relative;
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0px; /* Adjust padding as needed */
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+    .footercontainer{
+        width:70vw;
+        display:flex;
+        justify-content: space-between;
+        
+    }
+    .container {
+        width: 100%; /* Adjust the width as needed */
+        padding: 0 50px; /* Adjust padding as needed */
+    }
+    .menu li a {
+        color:blue;
+        text-decoration:none;
+        display: block;
+        padding: 0px 30px;
+        font-size: 18px;
+        line-height: 1;
+        transition:0.3s;
+    }
+    .footercontainer a {
+        font-size: 18px; /* Adjust the font size as needed */
+        padding: 10px; /* Adjust the padding as needed */
+    }
+    .image {
+        width: 320px;
+        height: 250px;
+    }
+ 
+    .image1{
+        width:280px;
+        height:300px;
+    }
+
+    .div2 p{
+        font-size: 20px;
+    }
+    .div2{
+        width:70vw;
+        display:flex;
+        justify-content: space-between;
+    }
+    #paragraph{
+        font-size: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social-media {
+        display: none;
+    }
+  }
+  
+  /* Desktop */
+  @media screen and (min-width: 1280px) {
+    body {
+        font-size: 23px;
+    }
+    ul.menu{
+       padding-left: 0;
+    }
+    
+    .main article {
+        max-width:100%; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the article horizontally */
+        text-align: justify; /* Justify the text within the article */
+    }
+    .header{
+        position: relative;
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0px; /* Adjust padding as needed */
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+    .footercontainer{
+        width:70vw;
+        display:flex;
+        justify-content: space-between;
+        
+    }
+    .container {
+        width: 100%; /* Adjust the width as needed */
+        padding: 0 50px; /* Adjust padding as needed */
+    }
+    .menu li a {
+        color:blue;
+        text-decoration:none;
+        display: block;
+        padding: 0px 30px;
+        font-size: 22px;
+        line-height: 1;
+        transition:0.3s;
+    }
+    .footercontainer a {
+        font-size: 18px; /* Adjust the font size as needed */
+        padding: 10px; /* Adjust the padding as needed */
+    }
+
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .div3 {
+        width: calc(50% - 10px); /* Adjust the width as needed with margin included */
+        margin-bottom: 20px; /* Adjust the margin as needed */
+        box-sizing: border-box;
+    }
+    .image {
+        width: 300px;
+        height: 250px;
+    }
+   .image1{
+      width:300px;
+      height:300px
+   }
+   
+   
+
+.div2 {
+    flex: 1; /* Make the div2 elements flexible, taking up equal space */
+    max-width: calc(50% - 20px); /* Set a max width with a small gap between items */
+    box-sizing: border-box;
+    margin-right: 100px; /* Adjust the margin as needed for spacing */
+    
+}
+
+.div2:last-child {
+    margin-right: 0; /* Remove right margin for the last div2 element */
+}
+
+.voice {
+    width:90vw;
+    display:flex;
+    justify-content: space-between;
+    
+    
+}
+.audio{
+    width:450px;
+}
+.myphoto{
+    width:150px;
+    height:160px;
+    border-radius: 50% ;
+    border: 2px solid purple;
+    justify-content:center;
+   
+   
+}
+.div2{
+    width:70vw;
+    display:flex;
+    justify-content: space-around;
+}
+.photo{
+    margin-bottom: 50px;
+    
+}
+
+.image1{
+    width:300px;
+    height:380px;
+}
+
+.div2 p{
+    font-size: 23px;
+}
+#AAU{
+    width:500px;
+    
+}
+#paragraph{
+    font-size: 20px;
+}
+.video iframe{
+    width:400px;
+    height:400px
+}
+.video-div{
+    width:40vw;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.AAU-div{
+    width:40vw;
+}
+.video-section{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.social-media a{
+  
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+}
+.social-media{
+    margin-top: 40px;
+    margin-left: 50px;
+ 
+   
+}
+
+
+.form{
+    display:flex;
+    flex-direction: column;
+    margin-right: 0px;
+    
+}
+
+}
