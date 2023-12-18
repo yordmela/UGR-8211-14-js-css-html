@@ -24,7 +24,7 @@
                         <li><a href="./Home.html">Home</a></li>
                         <li><a href="./Aboutme.html">Aboutme</a></li>
                         <li><a href="./resume.html">Resume</a></li>
-                        <li><a href="./Contact.html">Portfolio</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
                     </ul>
             </div>
                    
@@ -35,7 +35,7 @@
         
    
 
-   <div class="social-media">
+   <div class="container__form-section_social-media">
     <h3>On my Telegram</h3>
     <p><a href="https://telegram.org/">My telegram</a></p>
     <h3>On my Instagram</h3>
@@ -44,30 +44,35 @@
     <p><a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252">My linkedin</a></p>
 
    </div>
-    <div class="form">
+    <div class="container__form-section__form">
         <h2>Contact Me</h2>
         <h3>Let's connect</h3>
         
-    <form>
+    <form id="contactForm">
         <input type="text" id="name" name="name" placeholder="Your name">
         <br>
         <input type="email" id="email" name="email" placeholder="Your email">
         <br>
         <input type="tel" id="phone" name="phone" placeholder="Your phone number">
         <br>
-       
         <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+        <div>
+            Character Count: <span id="charCount">0</span>
+        </div>
         <br>
+        
+        
+      
         
         <button type="submit">Submit</button>
     </form>
 </div>
 
-
+<div id="confirmationMessage"></div>
 </section>
-
 <footer>
-    
+  
+          
     <div>
         <p>copyright 	&#169;2023 All Rights Reserved</p>
       </div>
@@ -78,6 +83,10 @@
           <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon" ></a>
         </div>
 </footer>
+
 </div>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="./js/index.js"></script>
 </body>
 </html>

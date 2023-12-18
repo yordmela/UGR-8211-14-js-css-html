@@ -270,7 +270,7 @@ footer {
         width: 150px;
         height: 150px;
     }
-    .image1 {
+    .container_photos__div2__image1 {
         width: 180px;
         height: 180px;
     }
@@ -315,14 +315,14 @@ footer {
   margin-top: 10px;
   
 }
-#audio {
+.container__voice__audio {
     width: 100%; /* Set the width to 100% */
     box-sizing: border-box; /* Include padding and border in the width */
     max-width: 800px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the section horizontally */
 }
 
-#audio audio {
+.container__voice__audio audio {
     width: 100%; /* Set the width of the audio element to 100% */
 }
 
@@ -340,7 +340,7 @@ table, th, td {
 
 iframe {
     width: 100%;
-    margin-top: 20px; /* Add margin-top to create space between the video and the top */
+    margin-top: 20px;
 }
 .content-section {
     display: flex;
@@ -360,7 +360,7 @@ iframe {
 
 .text-content {
     flex: 1;
-    max-width: 600px; /* Adjust the max-width based on your design */
+    max-width: 600px; 
 }
 
 .text-content figure {
@@ -377,7 +377,7 @@ figure img {
     height: auto;
 }
 
-/* Add margin and padding to the figure and figcaption for better spacing */
+
 figure {
     margin: 20px 0;
 }
@@ -419,7 +419,7 @@ section p {
 
 
 
-.form {
+.container__form-section__form {
     max-width: 700px;
     margin: auto; 
     background-color: #f0f0f0; 
@@ -473,13 +473,13 @@ form button:hover {
     background-color: #8656af; 
 }
 
-.audio{
+.container__voice__audio{
     width:100%;
     margin-bottom: 40px;
 }
 .container__video-section__AAU-div__AAU {
         
-    width:100vw;
+   
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -496,11 +496,11 @@ form button:hover {
     font-size: 20px;
 }
 
-.form input{
+.container__form-section__form input{
     margin-bottom: 30px;
     height:50px
 }
-.form{
+.container__form-section__form{
     margin-top: 30px;
         width:100vw;
 }
@@ -508,7 +508,12 @@ form button:hover {
     height:90px;
     margin-bottom: 35px;
 }
+
+
+
+
 @media screen and (max-width:480px) {
+   
     body {
         font-size: 14px;
     }
@@ -561,12 +566,12 @@ form button:hover {
     
 }
 
-.form {
+.container__form-section__form {
     width: 100%;
     height:60vh;
    
 }
-.social-media {
+.container__form-section_social-media {
     display: none;
 }
 
@@ -615,7 +620,7 @@ form button:hover {
         line-height: 1;
         transition:0.3s;
     }
-    .footercontainer a {
+    .container__footercontainer a {
         font-size: 18px; /* Adjust the font size as needed */
         padding: 10px; /* Adjust the padding as needed */
     }
@@ -645,7 +650,7 @@ form button:hover {
         
     }
     
-    .social-media {
+    .container__form-section_social-media {
         display: none;
     }
     
@@ -695,7 +700,7 @@ form button:hover {
         line-height: 1;
         transition:0.3s;
     }
-    .footercontainer a {
+    .container__footercontainer a {
         font-size: 18px; /* Adjust the font size as needed */
         padding: 10px; /* Adjust the padding as needed */
     }
@@ -723,7 +728,7 @@ form button:hover {
         flex-direction: column;
         justify-content: center;
     }
-    .social-media {
+    .container__form-section_social-media {
         display: none;
     }
   }
@@ -810,17 +815,17 @@ form button:hover {
     margin-right: 0; /* Remove right margin for the last div2 element */
 }
 
-.voice {
+.container__voice {
     width:90vw;
     display:flex;
     justify-content: space-between;
     
     
 }
-.audio{
+.container__voice__audio{
     width:450px;
 }
-.myphoto{
+.container__photo__myphoto{
     width:150px;
     height:160px;
     border-radius: 50% ;
@@ -873,13 +878,13 @@ form button:hover {
     justify-content:space-between;
 }
 
-.social-media a{
+.container__form-section_social-media a{
   
     text-decoration: none;
     display:flex;
     justify-content: center;
 }
-.social-media{
+.container__form-section_social-media{
     margin-top: 40px;
     margin-left: 50px;
  
@@ -887,7 +892,7 @@ form button:hover {
 }
 
 
-.form{
+.container__form-section__form{
     display:flex;
     flex-direction: column;
     margin-right: 0px;
@@ -895,3 +900,11 @@ form button:hover {
 }
 
 }
+
+
+    #charCount {
+        font-weight: bold;
+    }
+
+
+
